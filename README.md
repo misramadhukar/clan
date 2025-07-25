@@ -76,7 +76,6 @@ ollama serve
 - Update the plan schema or TaskPlannerAgent prompt if your agent requires new fields.
 
 ## Troubleshooting
-- **KeyError: 'code_reviewer'**: Ensure your config (e.g., `PROMPT_TEMPLATES`) includes a `code_reviewer` key and is passed to all agent factories.
 - **ModuleNotFoundError/AttributeError**: Make sure agent class names in `data/agent_info.yaml` match the actual class names in your codebase.
 - **LLM API errors**: Check your environment variables and API keys for the selected provider.
 - **Shell command errors**: Ensure the correct shell is installed and available on your system (e.g., bash, git bash, powershell).
