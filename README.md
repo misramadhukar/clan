@@ -14,27 +14,7 @@ Clan is an agentic orchestration framework for software engineering automation. 
 
 ## Orchestration Diagram
 
-```mermaid
-flowchart TD
-    UserInput["User Input (Requirement)"]
-    FileAgent["FileAgent: Project Structure"]
-    TaskPlanner["TaskPlannerAgent: Plan Steps"]
-    StepLoop["For Each Step (Dependency Order)"]
-    Agent["Agent (e.g., Developer, Reviewer, Git, etc.)"]
-    Output["Store Output, Update State"]
-    Save["Save Project to Disk"]
-    Next["Next Requirement or Exit"]
-
-    UserInput --> FileAgent
-    FileAgent --> TaskPlanner
-    TaskPlanner --> StepLoop
-    StepLoop --> Agent
-    Agent --> Output
-    Output --> StepLoop
-    Output --> Save
-    Save --> Next
-    Next -->|Repeat| UserInput
-```
+![Orchestration Diagram](docs/orchestration-diagram.png)
 
 ## Available Agents
 
