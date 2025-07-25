@@ -1,3 +1,4 @@
 python-dotenv
 # No external dependencies required for core functionality
 # Add packages here if you extend functionality (e.g., colorama for colored output) 
+PyYAML 

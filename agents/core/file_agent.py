@@ -1,4 +1,4 @@
-from clan.agents.base_agent import BaseAgent
+from clan.agents.core.base_agent import BaseAgent
 from clan.project_state import ProjectState
 from clan.llm import LLMClient
 from clan.config import PROMPT_TEMPLATES

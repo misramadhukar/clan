@@ -1,9 +1,9 @@
-from clan.agents.base_agent import BaseAgent
+from clan.agents.core.base_agent import BaseAgent
 from clan.llm import LLMClient
 from clan.config import PROMPT_TEMPLATES
 import re
 
-class UnitTester(BaseAgent):
+class UnitTesterAgent(BaseAgent):
     def __init__(self, llm_client=None, tools=None, memory=None, config=None):
         super().__init__(role="Unit Tester", tools=tools, memory=memory, config=config or PROMPT_TEMPLATES)
         self.llm = llm_client or LLMClient()

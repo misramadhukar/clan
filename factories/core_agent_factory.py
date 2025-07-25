@@ -1,7 +1,7 @@
-from clan.agents.file_agent import FileAgent
-from clan.agents.task_planner import TaskPlannerAgent
-from clan.agents.summary_agent import SummaryAgent
-from clan.agents.user_interaction_agent import UserInteractionAgent
+from clan.agents.core.file_agent import FileAgent
+from clan.agents.core.task_planner import TaskPlannerAgent
+from clan.agents.core.summary_agent import SummaryAgent
+from clan.agents.core.user_interaction_agent import UserInteractionAgent
 
 class CoreAgentFactory:
     def __init__(self, llm_client=None, config=None):

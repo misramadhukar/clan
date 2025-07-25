@@ -1,4 +1,4 @@
-from clan.agents.base_agent import BaseAgent
+from clan.agents.core.base_agent import BaseAgent
 from clan.llm import LLMClient
 import re
 

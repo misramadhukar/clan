@@ -1,0 +1,22 @@
+# List of available agents and their capabilities for planning
+agents:
+  - name: DeveloperAgent
+    description: Generates and updates code, documentation, and configuration files.
+    actions:
+      - implement
+      - update
+      - refactor
+  - name: UnitTesterAgent
+    description: Writes and runs unit tests for code files.
+    actions:
+      - write_tests
+      - run_tests
+  - name: CodeReviewerAgent
+    description: Reviews code for quality, style, and correctness.
+    actions:
+      - review
+  - name: SummaryAgent
+    description: Summarizes project state and changes.
+    actions:
+      - summarize
+# Add more agents as needed 

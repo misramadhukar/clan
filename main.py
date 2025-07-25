@@ -4,7 +4,7 @@ from clan.factories.core_agent_factory import CoreAgentFactory
 from clan.orchestrator.orchestrator import Orchestrator
 from clan.llm import LLMClient
 from clan.config import PROMPT_TEMPLATES
-from clan.agents.user_interaction_agent import UserInteractionAgent
+from clan.agents.core.user_interaction_agent import UserInteractionAgent
 from dotenv import load_dotenv
 import io
 load_dotenv()

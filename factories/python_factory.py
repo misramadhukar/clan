@@ -1,8 +1,8 @@
 from clan.factories.core_agent_factory import CoreAgentFactory
 from clan.factories.abstract_factory import AgentFactory
 from clan.agents.developer import DeveloperAgent
-from clan.agents.code_reviewer import CodeReviewer
-from clan.agents.unit_tester import UnitTester
+from clan.agents.code_reviewer import CodeReviewerAgent
+from clan.agents.unit_tester import UnitTesterAgent
 from clan.llm import LLMClient
 from clan.config import PROMPT_TEMPLATES
 
@@ -16,11 +16,11 @@ class PythonAgentFactory(CoreAgentFactory, AgentFactory):
     def create_developer_agent(self) -> DeveloperAgent:
         return DeveloperAgent(llm_client=self.llm_client, config=self.config)
 
-    def create_code_reviewer(self) -> CodeReviewer:
-        return CodeReviewer(llm_client=self.llm_client, config=self.config)
+    def create_code_reviewer(self) -> CodeReviewerAgent:
+        return CodeReviewerAgent(llm_client=self.llm_client, config=self.config)
 
-    def create_unit_tester(self) -> UnitTester:
-        return UnitTester(llm_client=self.llm_client, config=self.config)
+    def create_unit_tester(self) -> UnitTesterAgent:
+        return UnitTesterAgent(llm_client=self.llm_client, config=self.config)
 
     def create_transformer_agent(self):
         from clan.agents.transformer_agent import TransformerAgent

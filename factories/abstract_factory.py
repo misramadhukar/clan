@@ -3,8 +3,8 @@ Abstract base class for language-specific agent factories. Implementations shoul
 """
 from abc import ABC, abstractmethod
 from clan.agents.developer import DeveloperAgent
-from clan.agents.code_reviewer import CodeReviewer
-from clan.agents.unit_tester import UnitTester
+from clan.agents.code_reviewer import CodeReviewerAgent
+from clan.agents.unit_tester import UnitTesterAgent
 
 class AgentFactory(ABC):
     @abstractmethod
@@ -12,11 +12,11 @@ class AgentFactory(ABC):
         pass
 
     @abstractmethod
-    def create_code_reviewer(self) -> CodeReviewer:
+    def create_code_reviewer(self) -> CodeReviewerAgent:
         pass
 
     @abstractmethod
-    def create_unit_tester(self) -> UnitTester:
+    def create_unit_tester(self) -> UnitTesterAgent:
         pass
 
     @abstractmethod
