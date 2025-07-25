@@ -14,7 +14,7 @@ Clan is an agentic orchestration framework for software engineering automation. 
 
 ## Orchestration Diagram
 
-![Orchestration Diagram](docs/orchestration-diagram.png)
+<img src="docs/orchestration-diagram.png" alt="Orchestration Diagram" width="400"/>
 
 ## Available Agents
 
